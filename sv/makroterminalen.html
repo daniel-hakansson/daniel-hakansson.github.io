@@ -39,32 +39,80 @@
 
     <section>
       <h2>Vad den täcker</h2>
-      <p>Plattformen samlar makroekonomiska data om tillväxt, priser, räntor, arbetsmarknad, handel och offentliga finanser, tillsammans med marknadsdata och portföljanalys. En världskarta och en avdelning för geopolitik följer konflikter och geopolitisk risk, och egna sidor tar upp politik, demokrati och politisk ekonomi. I centrum står ett ekonometrilabb med OLS, GLM, ARIMA, VAR och paneldatamodeller, där varje modell redovisas med diagnostik och robusthetstest. Runt det finns simuleringar, från Monte Carlo och bootstrap till spelteori och enkla makromodeller, en avdelning för maskininlärning och ett rapportverktyg som gör om en analys till ett dokument.</p>
-      <figure class="shot">
-        <img src="../images/makroterminalen/makrodata.jpg" alt="Årlig tillväxt i real BNP för Danmark, Norge och Sverige sedan 2010" width="1600" height="1168" loading="lazy">
-        <figcaption>Sidan för makrodata: tillväxten i real BNP i Danmark, Norge och Sverige, ur OECD:s data.</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="../images/makroterminalen/ekonometri.jpg" alt="Snedhet, kurtosis och Jarque-Bera-test för tre svenska serier i ekonometrilabbet" width="1600" height="1168" loading="lazy">
-        <figcaption>Ekonometrilabbet, här med fördelningstest för de valda serierna innan någon modell skattas.</figcaption>
+      <p>Plattformen har 24 sidor, som syns i menyn till vänster i bilden nedan. De samlar makroekonomiska data om tillväxt, priser, räntor, arbetsmarknad, handel och offentliga finanser, tillsammans med marknadsdata, företagsdata och portföljanalys. En världskarta, en landsprofil och en avdelning för geopolitik följer konflikter och geopolitisk risk, och egna sidor tar upp politik, demokrati och politisk ekonomi. Dessutom finns simuleringar, från Monte Carlo och bootstrap till spelteori och enkla makromodeller, en avdelning för maskininlärning och ett rapportverktyg som gör om en analys till ett dokument.</p>
+      <figure class="shot wide">
+        <a href="../images/makroterminalen/sv/oversikt.jpg"><img src="../images/makroterminalen/sv/oversikt.jpg" alt="Sidan Makrodata med tillväxten i real BNP för Danmark, Norge och Sverige, och hela menyn med 24 sidor till vänster" width="1800" height="1975"></a>
+        <figcaption>Sidan för makrodata, med plattformens hela meny till vänster. Klicka på en bild för att se den i full storlek.</figcaption>
       </figure>
     </section>
 
     <section>
+      <h2>Ekonometrilabbet</h2>
+      <p>I centrum står ett ekonometrilabb, uppbyggt som en rad verktyg som alla arbetar på samma urval av serier. Under Regression specificerar man modellen, lägger till konstant, trend, säsongsdummies eller laggar och väljer kovariansmatris, från klassiska standardfel till sådana som är robusta mot heteroskedasticitet och autokorrelation, innan den skattade ekvationen skrivs ut med koefficienttabell, modellmått och residualdiagram. Diagnostik prövar residualerna. Tidsserier omfattar enhetsrot och stationäritet, säsongsdekomponering, kointegration och felkorrigering, VAR, ARDL, strukturbrott utan förhandsvald brottpunkt samt prognoser med utvärdering. Panel och IV omfattar poolad OLS, fasta och slumpmässiga effekter, instrumentvariabler och difference-in-differences. Analys jämför serier indexerade till ett basår, räknar rullande korrelationer och kör Chow-testet. Filter och cykler ställer Hodrick-Prescott-filtret, med Hamiltons kritik utskriven, mot Hamiltons alternativ och bandpassfiltren från Baxter-King och Christiano-Fitzgerald, och lägger till konjunkturdatering och nowcasting. Moderna metoder erbjuder local projections, kvantilregression, regularisering, faktormodeller, Markov-switching och tröskelmodeller.</p>
+      <div class="gallery" role="region" aria-roledescription="carousel" aria-label="Ekonometrilabbet, bildserie" tabindex="0">
+        <div class="gallery-controls">
+          <button type="button" class="gallery-prev" aria-label="Föregående bild">&larr;</button>
+          <span class="gallery-count" aria-live="polite">1 / 6</span>
+          <button type="button" class="gallery-next" aria-label="Nästa bild">&rarr;</button>
+        </div>
+        <div class="gallery-track">
+          <figure class="slide">
+            <a href="../images/makroterminalen/sv/regression-1.jpg"><img src="../images/makroterminalen/sv/regression-1.jpg" alt="Regressionsverktyget med modellspecifikation, val av standardfel och den skattade ekvationen" width="1600" height="2136"></a>
+            <figcaption>Regression, del 1: raden av verktyg överst, därefter specifikation, tillägg, val av standardfel och den skattade ekvationen med sina koefficienter.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="../images/makroterminalen/sv/regression-2.jpg"><img src="../images/makroterminalen/sv/regression-2.jpg" alt="Modellmått, tolkning av koefficienter och residualdiagram i regressionsverktyget" width="1600" height="1424" loading="lazy"></a>
+            <figcaption>Regression, del 2: modellmått, hur koefficienterna ska läsas samt anpassade värden och residualer över tid.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="../images/makroterminalen/sv/tidsserier.jpg"><img src="../images/makroterminalen/sv/tidsserier.jpg" alt="Tidsserieverktyget med enhetsrots- och stationäritetstest" width="1600" height="1727" loading="lazy"></a>
+            <figcaption>Tidsserier: sju metoder, här enhetsrots- och stationäritetstest (ADF, KPSS, Zivot-Andrews) för tre svenska serier.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="../images/makroterminalen/sv/filter-1.jpg"><img src="../images/makroterminalen/sv/filter-1.jpg" alt="Verktyget Filter och cykler med HP-filtrets formel" width="1600" height="1868" loading="lazy"></a>
+            <figcaption>Filter och cykler: Hodrick-Prescott-filtret med sitt minimeringsproblem utskrivet.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="../images/makroterminalen/sv/filter-2.jpg"><img src="../images/makroterminalen/sv/filter-2.jpg" alt="Trend och cykel i svensk BNP samt kritiken mot HP-filtret" width="1600" height="1974" loading="lazy"></a>
+            <figcaption>Filter och cykler: trend och cykel i svensk BNP, följt av Hamiltons kritik mot HP-filtret.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="../images/makroterminalen/sv/moderna.jpg"><img src="../images/makroterminalen/sv/moderna.jpg" alt="Impulssvar skattat med local projections i verktyget Moderna metoder" width="1600" height="2643" loading="lazy"></a>
+            <figcaption>Moderna metoder: sex metoder, här hur svensk BNP svarar på en chock i KPI, skattat med local projections.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Världen, geopolitik och demokrati</h2>
+      <p>Världskartan visar ett mått för ett år i alla länder som rapporterat det, med en rangordning bredvid. Geopolitikmonitorn bygger på konfliktdata från Uppsala universitet och larmar om länder där antalet dödsfall ökat kraftigt, och demokratisidorna redovisar V-Dems index och säger exakt vad som räknas i plattformen och vad som hämtas ur källan.</p>
+      <div class="gallery" role="region" aria-roledescription="carousel" aria-label="Världen, geopolitik och demokrati, bildserie" tabindex="0">
+        <div class="gallery-controls">
+          <button type="button" class="gallery-prev" aria-label="Föregående bild">&larr;</button>
+          <span class="gallery-count" aria-live="polite">1 / 3</span>
+          <button type="button" class="gallery-next" aria-label="Nästa bild">&rarr;</button>
+        </div>
+        <div class="gallery-track">
+          <figure class="slide">
+            <a href="../images/makroterminalen/sv/varldskarta.jpg"><img src="../images/makroterminalen/sv/varldskarta.jpg" alt="Världskarta över BNP-tillväxt med rangordning av länder" width="1600" height="1663"></a>
+            <figcaption>Världskartan: BNP-tillväxt 2024 ur Världsbankens data, med rangordningen bredvid.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="../images/makroterminalen/sv/geopolitik.jpg"><img src="../images/makroterminalen/sv/geopolitik.jpg" alt="Geopolitikmonitorn med larm för länder där dödsfallen i konflikter ökat" width="1600" height="1734" loading="lazy"></a>
+            <figcaption>Geopolitikmonitorn, byggd på Uppsala Conflict Data Program.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="../images/makroterminalen/sv/demokrati.jpg"><img src="../images/makroterminalen/sv/demokrati.jpg" alt="Demokratisidan med V-Dems index för Sverige och formeln som används" width="1600" height="1628" loading="lazy"></a>
+            <figcaption>Demokratisidan, byggd på V-Dem, förklarar vad den räknar och skriver ut formeln.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <h2>Hur den är byggd</h2>
-      <p>Allt vilar på ett gemensamt variabelregister. Sexton adaptrar hämtar data från 29 olika källor och beskriver varje serie på samma sätt, så att en variabel ser likadan ut oavsett varifrån den kommer. Registret rymmer i dag 108&nbsp;146 variabler. Appen har 24 sidor, fungerar på svenska och engelska genom ett översättningslager och finns i fem färgteman. Varje modell skriver ut sin egen formel, genererad ur koden i stället för hämtad ur en lärobok, och en statisk kontroll ser till att det förblir så. En testsvit kör varje sida på båda språken och i alla teman. Jag har utvecklat plattformen med AI-drivna kodverktyg, vilket har låtit mig lägga tiden på ekonomin och på att kontrollera resultaten.</p>
-      <figure class="shot">
-        <img src="../images/makroterminalen/geopolitik.jpg" alt="Geopolitikmonitorn med länder där antalet dödsfall i konflikter ökat kraftigt" width="1600" height="1168" loading="lazy">
-        <figcaption>Geopolitikmonitorn, byggd på konfliktdata från Uppsala universitet.</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="../images/makroterminalen/varldskarta.jpg" alt="Världskarta över BNP-tillväxt ur Världsbankens data" width="1600" height="1168" loading="lazy">
-        <figcaption>Världskartan: ett mått, ett år, alla länder som rapporterat det.</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="../images/makroterminalen/demokrati.jpg" alt="Demokratisidan som förklarar vad V-Dem mäter, med formeln som sidan räknar" width="1600" height="1168" loading="lazy">
-        <figcaption>Demokratisidan, byggd på V-Dem, säger vad den räknar och skriver ut formeln.</figcaption>
-      </figure>
+      <p>Allt vilar på ett gemensamt variabelregister. Sexton adaptrar hämtar data från 29 olika källor och beskriver varje serie på samma sätt, så att en variabel ser likadan ut oavsett varifrån den kommer. Registret rymmer i dag 108&nbsp;146 variabler. Appen fungerar på svenska och engelska genom ett översättningslager och finns i fem färgteman. Varje modell skriver ut sin egen formel, genererad ur koden i stället för hämtad ur en lärobok, och en statisk kontroll ser till att det förblir så. En testsvit kör varje sida på båda språken och i alla teman. Jag har utvecklat plattformen med AI-drivna kodverktyg, vilket har låtit mig lägga tiden på ekonomin och på att kontrollera resultaten.</p>
     </section>
 
     <section>
@@ -88,5 +136,6 @@
     </div>
   </footer>
   <script src="../email.js"></script>
+  <script src="../gallery.js"></script>
 </body>
 </html>

@@ -39,32 +39,80 @@
 
     <section>
       <h2>What it covers</h2>
-      <p>The platform brings together macroeconomic data on growth, prices, interest rates, labour markets, trade and public finances, alongside market data and portfolio analysis. A world map and a geopolitics section follow conflicts and geopolitical risk, and separate pages cover politics, democracy and political economy. At its centre is an econometrics lab with OLS, GLM, ARIMA, VAR and panel data models, each reported with diagnostics and robustness checks. Around it are simulations, from Monte Carlo and bootstrap to game theory and simple macro models, a machine learning section and a report tool that turns an analysis into a document.</p>
-      <figure class="shot">
-        <img src="images/makroterminalen/makrodata.jpg" alt="Annual real GDP growth for Denmark, Norway and Sweden since 2010" width="1600" height="1168" loading="lazy">
-        <figcaption>The macro data page: real GDP growth in Denmark, Norway and Sweden, from OECD data.</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="images/makroterminalen/ekonometri.jpg" alt="Skewness, kurtosis and Jarque-Bera tests for three Swedish series in the econometrics lab" width="1600" height="1168" loading="lazy">
-        <figcaption>The econometrics lab, here with distribution tests for the chosen series before any model is estimated.</figcaption>
+      <p>The platform has 24 pages, listed in the menu on the left of the image below. They bring together macroeconomic data on growth, prices, interest rates, labour markets, trade and public finances, alongside market data, company data and portfolio analysis. A world map, a country profile and a geopolitics section follow conflicts and geopolitical risk, and separate pages cover politics, democracy and political economy. There are also simulations, from Monte Carlo and bootstrap to game theory and simple macro models, a machine learning section and a report tool that turns an analysis into a document.</p>
+      <figure class="shot wide">
+        <a href="images/makroterminalen/en/oversikt.jpg"><img src="images/makroterminalen/en/oversikt.jpg" alt="The Makrodata page with real GDP growth for Denmark, Norway and Sweden, and the full menu of 24 pages on the left" width="1800" height="1975"></a>
+        <figcaption>The macro data page, with the full menu of the platform on the left. Click an image to see it in full size.</figcaption>
       </figure>
     </section>
 
     <section>
+      <h2>The econometrics lab</h2>
+      <p>At the centre is an econometrics lab, organised as a row of tools that all work on the same selection of series. Regression lets you specify the model, add a constant, a trend, seasonal dummies or lags, and choose the covariance matrix, from classical to heteroskedasticity- and autocorrelation-robust standard errors, before the estimated equation is written out with its coefficient table, fit statistics and residual plots. Diagnostics tests the residuals. Time series covers unit roots and stationarity, seasonal decomposition, cointegration and error correction, VAR, ARDL, structural breaks without a preset break date, and forecasting with evaluation. Panel and IV covers pooled OLS, fixed and random effects, instrumental variables and difference-in-differences. Analysis compares series indexed to a base year, computes rolling correlations and runs the Chow test. Filters and cycles sets the Hodrick-Prescott filter, with Hamilton’s critique written out, against Hamilton’s alternative and the Baxter-King and Christiano-Fitzgerald band-pass filters, and adds business cycle dating and nowcasting. Modern methods offers local projections, quantile regression, regularisation, factor models, Markov switching and threshold models.</p>
+      <div class="gallery" role="region" aria-roledescription="carousel" aria-label="The econometrics lab, image series" tabindex="0">
+        <div class="gallery-controls">
+          <button type="button" class="gallery-prev" aria-label="Previous image">&larr;</button>
+          <span class="gallery-count" aria-live="polite">1 / 6</span>
+          <button type="button" class="gallery-next" aria-label="Next image">&rarr;</button>
+        </div>
+        <div class="gallery-track">
+          <figure class="slide">
+            <a href="images/makroterminalen/en/regression-1.jpg"><img src="images/makroterminalen/en/regression-1.jpg" alt="Regression tool with model specification, standard error options and the estimated equation" width="1600" height="2136"></a>
+            <figcaption>Regression, part 1: the row of tools at the top, then specification, additions, the choice of standard errors and the estimated equation with its coefficients.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="images/makroterminalen/en/regression-2.jpg"><img src="images/makroterminalen/en/regression-2.jpg" alt="Regression fit statistics, coefficient interpretation and residual plots" width="1600" height="1424" loading="lazy"></a>
+            <figcaption>Regression, part 2: fit statistics, how to read the coefficients, and fitted values and residuals over time.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="images/makroterminalen/en/tidsserier.jpg"><img src="images/makroterminalen/en/tidsserier.jpg" alt="Time series tool with unit root and stationarity tests" width="1600" height="1727" loading="lazy"></a>
+            <figcaption>Time series: seven methods, here unit root and stationarity tests (ADF, KPSS, Zivot-Andrews) for three Swedish series.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="images/makroterminalen/en/filter-1.jpg"><img src="images/makroterminalen/en/filter-1.jpg" alt="Filters and cycles tool with the HP filter formula" width="1600" height="1868" loading="lazy"></a>
+            <figcaption>Filters and cycles: the Hodrick-Prescott filter with its minimisation problem written out.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="images/makroterminalen/en/filter-2.jpg"><img src="images/makroterminalen/en/filter-2.jpg" alt="Trend and cycle of Swedish GDP and the critique of the HP filter" width="1600" height="1974" loading="lazy"></a>
+            <figcaption>Filters and cycles: trend and cycle in Swedish GDP, followed by Hamilton’s critique of the HP filter.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="images/makroterminalen/en/moderna.jpg"><img src="images/makroterminalen/en/moderna.jpg" alt="Local projections impulse response in the modern methods tool" width="1600" height="2643" loading="lazy"></a>
+            <figcaption>Modern methods: six methods, here the response of Swedish GDP to a shock in CPI, estimated with local projections.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>The world, geopolitics and democracy</h2>
+      <p>The world map shows one measure for one year across every country that reports it, with a ranking next to it. The geopolitics monitor builds on conflict data from Uppsala University and flags countries where fatalities have risen sharply, and the democracy pages present the V-Dem indices and say exactly what is computed in the platform and what is taken from the source.</p>
+      <div class="gallery" role="region" aria-roledescription="carousel" aria-label="The world, geopolitics and democracy, image series" tabindex="0">
+        <div class="gallery-controls">
+          <button type="button" class="gallery-prev" aria-label="Previous image">&larr;</button>
+          <span class="gallery-count" aria-live="polite">1 / 3</span>
+          <button type="button" class="gallery-next" aria-label="Next image">&rarr;</button>
+        </div>
+        <div class="gallery-track">
+          <figure class="slide">
+            <a href="images/makroterminalen/en/varldskarta.jpg"><img src="images/makroterminalen/en/varldskarta.jpg" alt="World map of GDP growth with a country ranking" width="1600" height="1663"></a>
+            <figcaption>The world map: GDP growth in 2024 from World Bank data, with the ranking alongside.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="images/makroterminalen/en/geopolitik.jpg"><img src="images/makroterminalen/en/geopolitik.jpg" alt="Geopolitics monitor with alerts for countries where conflict fatalities have increased" width="1600" height="1734" loading="lazy"></a>
+            <figcaption>The geopolitics monitor, built on the Uppsala Conflict Data Program.</figcaption>
+          </figure>
+          <figure class="slide">
+            <a href="images/makroterminalen/en/demokrati.jpg"><img src="images/makroterminalen/en/demokrati.jpg" alt="Democracy page with V-Dem indices for Sweden and the formula used" width="1600" height="1628" loading="lazy"></a>
+            <figcaption>The democracy page, built on V-Dem, explains what it computes and writes out the formula.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <h2>How it is built</h2>
-      <p>Everything rests on a common variable register. Sixteen adapters fetch data from 29 distinct sources and describe each series in the same way, so that a variable looks the same regardless of where it comes from. The register currently holds 108,146 variables. The application has 24 pages, runs in Swedish and English through a translation layer, and comes in five colour themes. Each model prints its own formula, generated from the code rather than copied from a textbook, and a static check makes sure it stays that way. A test suite runs every page in both languages and all themes. I developed the platform with AI coding tools, which let me spend my time on the economics and on checking the results.</p>
-      <figure class="shot">
-        <img src="images/makroterminalen/geopolitik.jpg" alt="The geopolitics monitor showing countries where conflict deaths have risen sharply" width="1600" height="1168" loading="lazy">
-        <figcaption>The geopolitics monitor, built on conflict data from Uppsala University.</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="images/makroterminalen/varldskarta.jpg" alt="World map of GDP growth from World Bank data" width="1600" height="1168" loading="lazy">
-        <figcaption>The world map: one measure, one year, every country that reports it.</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="images/makroterminalen/demokrati.jpg" alt="The democracy page explaining what V-Dem measures, with the formula the page computes" width="1600" height="1168" loading="lazy">
-        <figcaption>The democracy page, built on V-Dem, says what it computes and writes out the formula.</figcaption>
-      </figure>
+      <p>Everything rests on a common variable register. Sixteen adapters fetch data from 29 distinct sources and describe each series in the same way, so that a variable looks the same regardless of where it comes from. The register currently holds 108,146 variables. The application runs in Swedish and English through a translation layer and comes in five colour themes. Each model prints its own formula, generated from the code rather than copied from a textbook, and a static check makes sure it stays that way. A test suite runs every page in both languages and all themes. I developed the platform with AI coding tools, which let me spend my time on the economics and on checking the results.</p>
     </section>
 
     <section>
@@ -88,5 +136,6 @@
     </div>
   </footer>
   <script src="email.js"></script>
+  <script src="gallery.js"></script>
 </body>
 </html>
