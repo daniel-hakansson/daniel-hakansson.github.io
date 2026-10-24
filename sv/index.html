@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Håkansson</title>
+  <meta name="description" content="Daniel Håkansson, masterstudent i nationalekonomi med inriktning finansiell ekonomi vid Linköpings universitet.">
+  <link rel="alternate" hreflang="en" href="https://daniel-hakansson.github.io/">
+  <link rel="alternate" hreflang="sv" href="https://daniel-hakansson.github.io/sv/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="./">Daniel Håkansson</a>
+      <nav>
+        <a href="#writing">Skrivande</a>
+        <a href="#engagement">Engagemang</a>
+        <a href="#contact">Kontakt</a>
+        <a href="cv.html">CV</a>
+      </nav>
+      <a class="lang" href="../" hreflang="en" lang="en">English</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <h1>Om mig</h1>
+      <p>Jag läser masterprogrammet i nationalekonomi vid <a href="https://liu.se">Linköpings universitet</a>, med inriktning finansiell ekonomi. Från januari 2027 gör jag praktik vid <a href="https://www.riksdagen.se">Riksdagens utredningstjänst</a>. Jag har läst nationalekonomi på grundnivå vid Linköpings universitet och internationell samhällsvetenskap med inriktning statsvetenskap vid <a href="https://lnu.se">Linnéuniversitetet</a>, med en utbytestermin vid <a href="https://www.southwestern.edu">Southwestern University</a> i Texas.</p>
+      <p>Mina intressen ligger där makroekonomi möter internationell politik, framför allt penningpolitik, valutasystem och handel. Jag dras till frågor om hur ekonomisk politik tar form och hur dess effekter syns i data, och jag arbetar främst med panel- och tidsseriemetoder i R och Python.</p>
+      <figure class="portrait">
+        <img src="../images/portrait.jpg" alt="Daniel Håkansson" width="1200" height="900">
+      </figure>
+    </section>
+
+    <section id="writing">
+      <h2>Skrivande och projekt</h2>
+      <ol class="works">
+        <li>
+          <span class="work-title" lang="en">Optimum Currency Areas in Practice: A Panel Data Analysis of Labour Mobility in the EMU</span>, med Hannes Bokne.<br>
+          Kandidatuppsats i nationalekonomi, Linköpings universitet, 2026. [<a href="https://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-224443">DiVA</a>]
+        </li>
+        <li>
+          <span class="work-title">Makroterminalen</span>, en analysplattform för makroekonomiska data.<br>
+          Pågående sedan 2026. En plattform i Python som samlar ekonomiska, finansiella och politiska serier från öppna källor som SCB, Eurostat, OECD, ECB, IMF och Världsbanken i ett gemensamt register, så att ett påstående kan prövas mot data på några minuter.
+        </li>
+      </ol>
+    </section>
+
+    <section id="engagement">
+      <h2>Engagemang</h2>
+      <p>Mellan 2024 och 2026 var jag koordinator för Economic Security Research vid <a href="https://youthsecurity.eu">Youth Security Europe</a>, ett europeiskt nätverk verksamt i mer än tio länder. 2023–24 satt jag i styrelsen för Utrikespolitiska föreningen vid Linnéuniversitetet, där jag ansvarade för föreningens podcast och intervjuade riksdagsledamöter, Europaparlamentariker och andra experter om ekonomisk utveckling och geopolitiska konflikter. 2024 deltog jag i ConSIMium, en simulering av förhandlingar i Europeiska unionens råd som anordnades tillsammans med rådets generalsekretariat i Bryssel.</p>
+      <p>Jag talar svenska och engelska, och även spanska och danska.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Kontakt</h2>
+      <p>Enklast når du mig via e-post på <span id="email">daniel.hakansson.privat [at] gmail.com</span>. Du hittar mig också på <a href="https://se.linkedin.com/in/daniel-h%C3%A5kansson-78451b238">LinkedIn</a>.</p>
+      <script>
+        (function () {
+          var a = ["daniel.hakansson.privat", "gmail.com"].join("@");
+          var link = document.createElement("a");
+          link.href = "mailto:" + a;
+          link.textContent = a;
+          document.getElementById("email").replaceWith(link);
+        })();
+      </script>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Senast uppdaterad oktober 2026</div>
+  </footer>
+</body>
+</html>
