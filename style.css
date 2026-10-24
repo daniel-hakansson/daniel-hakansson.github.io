@@ -82,6 +82,7 @@ p { margin: 0 0 1rem; }
 .works { padding-left: 1.4rem; margin: 0; }
 .works li { margin-bottom: 1rem; padding-left: 0.25rem; }
 .work-title { font-weight: 600; }
+.project { margin-bottom: 1rem; }
 
 .muted { color: var(--muted); }
 
@@ -126,6 +127,6 @@ p { margin: 0 0 1rem; }
 @media (max-width: 34rem) {
   body { font-size: 1.12rem; }
   .site-header .lang { order: 2; margin-left: auto; padding-left: 0; border-left: 0; }
-  .site-header nav { order: 3; width: 100%; margin-left: 0; }
+  .site-header nav { order: 3; width: 100%; margin-left: 0; gap: 0.25rem 0.9rem; font-size: 1.05rem; }
   .portrait { margin-top: 1.5rem; }
 }
