@@ -84,6 +84,19 @@ p { margin: 0 0 1rem; }
 .work-title { font-weight: 600; }
 .project { margin-bottom: 1rem; }
 
+.kicker { margin: 0 0 0.4rem; font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.kicker a { color: var(--muted); }
+.lead { font-size: 1.3rem; color: var(--muted); margin-bottom: 2rem; }
+.shot { margin: 1.75rem 0; }
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+}
+.shot figcaption { margin-top: 0.5rem; font-size: 1.02rem; color: var(--muted); font-style: italic; }
+
 .muted { color: var(--muted); }
 
 .cv .print-note { margin-top: -0.5rem; font-size: 1.05rem; }

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Makroterminalen – Daniel Håkansson</title>
+  <meta name="description" content="Makroterminalen, en analysplattform för makroekonomiska, finansiella och politiska data byggd av Daniel Håkansson.">
+  <link rel="alternate" hreflang="en" href="https://daniel-hakansson.github.io/makroterminalen.html">
+  <link rel="alternate" hreflang="sv" href="https://daniel-hakansson.github.io/sv/makroterminalen.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="./">Daniel Håkansson</a>
+      <nav>
+        <a href="./#papers">Uppsatser</a>
+        <a href="./#projects" aria-current="page">Projekt</a>
+        <a href="./#engagement">Engagemang</a>
+        <a href="./#contact">Kontakt</a>
+        <a href="cv.html">CV</a>
+      </nav>
+      <a class="lang" href="../makroterminalen.html" hreflang="en" lang="en">English</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="kicker"><a href="./#projects">Projekt</a></p>
+    <h1>Makroterminalen</h1>
+    <p class="lead">En analysplattform för makroekonomiska, finansiella och politiska data, byggd i Python och Streamlit sedan 2026.</p>
+
+    <section>
+      <h2>Varför den finns</h2>
+      <p>Den ekonomiska debatten är full av påståenden som är lätta att framföra och tidskrävande att kontrollera. Att pröva ett av dem betyder oftast att ladda ned kalkylblad från flera statistikmyndigheter, jämka ihop deras definitioner och frekvenser och först därefter komma fram till själva frågan. Jag byggde Makroterminalen för att samma kontroll ska ta några minuter: datan finns redan på ett ställe, i ett format, och verktygen för att analysera den ligger bredvid.</p>
+    </section>
+
+    <section>
+      <h2>Vad den täcker</h2>
+      <p>Plattformen samlar makroekonomiska data om tillväxt, priser, räntor, arbetsmarknad, handel och offentliga finanser, tillsammans med marknadsdata och portföljanalys. En världskarta och en avdelning för geopolitik följer konflikter och geopolitisk risk, och egna sidor tar upp politik, demokrati och politisk ekonomi. I centrum står ett ekonometrilabb med OLS, GLM, ARIMA, VAR och paneldatamodeller, där varje modell redovisas med diagnostik och robusthetstest. Runt det finns simuleringar, från Monte Carlo och bootstrap till spelteori och enkla makromodeller, en avdelning för maskininlärning och ett rapportverktyg som gör om en analys till ett dokument.</p>
+      <figure class="shot">
+        <img src="../images/makroterminalen/makrodata.jpg" alt="Årlig tillväxt i real BNP för Danmark, Norge och Sverige sedan 2010" width="1600" height="1168" loading="lazy">
+        <figcaption>Sidan för makrodata: tillväxten i real BNP i Danmark, Norge och Sverige, ur OECD:s data.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="../images/makroterminalen/ekonometri.jpg" alt="Snedhet, kurtosis och Jarque-Bera-test för tre svenska serier i ekonometrilabbet" width="1600" height="1168" loading="lazy">
+        <figcaption>Ekonometrilabbet, här med fördelningstest för de valda serierna innan någon modell skattas.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Hur den är byggd</h2>
+      <p>Allt vilar på ett gemensamt variabelregister. Sexton adaptrar hämtar data från 29 olika källor och beskriver varje serie på samma sätt, så att en variabel ser likadan ut oavsett varifrån den kommer. Registret rymmer i dag 108&nbsp;146 variabler. Appen har 24 sidor, fungerar på svenska och engelska genom ett översättningslager och finns i fem färgteman. Varje modell skriver ut sin egen formel, genererad ur koden i stället för hämtad ur en lärobok, och en statisk kontroll ser till att det förblir så. En testsvit kör varje sida på båda språken och i alla teman. Jag har utvecklat plattformen med AI-drivna kodverktyg, vilket har låtit mig lägga tiden på ekonomin och på att kontrollera resultaten.</p>
+      <figure class="shot">
+        <img src="../images/makroterminalen/geopolitik.jpg" alt="Geopolitikmonitorn med länder där antalet dödsfall i konflikter ökat kraftigt" width="1600" height="1168" loading="lazy">
+        <figcaption>Geopolitikmonitorn, byggd på konfliktdata från Uppsala universitet.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="../images/makroterminalen/varldskarta.jpg" alt="Världskarta över BNP-tillväxt ur Världsbankens data" width="1600" height="1168" loading="lazy">
+        <figcaption>Världskartan: ett mått, ett år, alla länder som rapporterat det.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="../images/makroterminalen/demokrati.jpg" alt="Demokratisidan som förklarar vad V-Dem mäter, med formeln som sidan räknar" width="1600" height="1168" loading="lazy">
+        <figcaption>Demokratisidan, byggd på V-Dem, säger vad den räknar och skriver ut formeln.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Källor</h2>
+      <p>Datan kommer från öppna källor: <a href="https://www.ecb.europa.eu">ECB</a>, <a href="https://ec.europa.eu/eurostat">Eurostat</a>, <a href="https://fred.stlouisfed.org">FRED</a>, <a href="https://www.imf.org">IMF</a>, <a href="https://www.oecd.org">OECD</a>, EU-kommissionens <a href="https://economy-finance.ec.europa.eu">generaldirektorat för ekonomi och finans</a>, <a href="https://ourworldindata.org">Our World in Data</a>, <a href="https://www.scb.se">SCB</a> och andra PxWeb-register, <a href="https://www.unhcr.org/refugee-statistics">UNHCR</a>, <a href="https://rsf.org">Reportrar utan gränser</a>, <a href="https://www.matteoiacoviello.com/gpr.htm">indexet för geopolitisk risk</a>, <a href="https://hapi.humdata.org">HDX HAPI</a>, <a href="https://ucdp.uu.se">Uppsala Conflict Data Program</a>, <a href="https://www.v-dem.net">V-Dem</a> och <a href="https://data.worldbank.org">Världsbanken</a>.</p>
+    </section>
+
+    <section>
+      <h2>Att se den</h2>
+      <p>Makroterminalen körs lokalt på min dator och finns inte tillgänglig på nätet. Jag visar den gärna, till exempel vid en intervju. <a href="./#contact">Hör av dig</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Senast uppdaterad oktober 2026</span>
+      <span class="icons">
+        <a class="email-link" href="./#contact" aria-label="E-post" title="E-post"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1 2.4V17h16V7.4l-8 5.3-8-5.3ZM5.6 7 12 11.2 18.4 7H5.6Z"/></svg></a>
+        <a href="https://se.linkedin.com/in/daniel-h%C3%A5kansson-78451b238" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.79-1.7-2.79-1.7 0-1.96 1.33-1.96 2.7V21h-4V9.5Z"/></svg></a>
+      </span>
+    </div>
+  </footer>
+  <script src="../email.js"></script>
+</body>
+</html>
