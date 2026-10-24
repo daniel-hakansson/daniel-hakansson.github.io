@@ -4,7 +4,6 @@
   --muted: #5f636b;
   --rule: #dedbd3;
   --accent: #1f3a5f;
-  --placeholder: #ebe8e1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,7 +13,6 @@
     --muted: #a3a6ad;
     --rule: #34373d;
     --accent: #9db8dc;
-    --placeholder: #26292e;
   }
 }
 
@@ -72,24 +70,10 @@ h2 { font-size: 1.5rem; }
 p { margin: 0 0 1rem; }
 
 .portrait {
-  float: right;
-  width: 11rem;
-  margin: 0.3rem 0 1rem 1.75rem;
-  position: relative;
+  max-width: 26rem;
+  margin: 2rem auto 0;
 }
 .portrait img { display: block; width: 100%; height: auto; border-radius: 2px; }
-.portrait .placeholder { display: none; }
-.portrait.missing img { display: none; }
-.portrait.missing .placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 4 / 5;
-  background: var(--placeholder);
-  color: var(--muted);
-  font-style: italic;
-}
-#about::after { content: ""; display: block; clear: both; }
 
 .works { padding-left: 1.4rem; margin: 0; }
 .works li { margin-bottom: 1rem; padding-left: 0.25rem; }
@@ -108,5 +92,5 @@ p { margin: 0 0 1rem; }
 
 @media (max-width: 34rem) {
   body { font-size: 1.12rem; }
-  .portrait { float: none; width: 9rem; margin: 0 0 1.25rem; }
+  .portrait { margin-top: 1.5rem; }
 }
